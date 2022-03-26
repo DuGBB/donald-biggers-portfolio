@@ -25,7 +25,7 @@ Clone the repo, and do the npm install in root directory.
 
 # Usage
 
-Run npm start from your command line.
+Run `npm start` from your command line.
 
 # Contributing
 
