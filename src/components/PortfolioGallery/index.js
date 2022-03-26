@@ -1,23 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import RepoList from "../RepoList";
 import { capitalizeFirstLetter } from "../../utils/helpers";
-import photo from "../../assets/PortfolioGallery/PG.png";
 
-function PortfolioGallery(props) {
-  const currentCategory = {
-    name: "Portfolio",
-    description: "Information about this portfolio.",
-  };
+function PortfolioGallery({ currentCategory }) {
+  const { name, description } = currentCategory;
+
   return (
     <section>
-      <h1>{capitalizeFirstLetter(currentCategory.name)}</h1>
-      <p>{currentCategory.name}</p>
-      <div className="flex-row">
-        <img
-          src={photo}
-          alt="Blazing-Saddles-Forum"
-          className="img-thumbnail mx-1"
-        />
-      </div>
+      <h1 data-testid="h1tag">{capitalizeFirstLetter(name)}</h1>
+      <p>{description}</p>
+      <RepoList category={name} />
     </section>
   );
 }

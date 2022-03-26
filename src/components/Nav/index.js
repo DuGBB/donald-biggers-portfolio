@@ -3,6 +3,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
+  // console.log(props);
   useEffect(() => {
     console.log(currentCategory);
     document.title = capitalizeFirstLetter(currentCategory.name);
@@ -21,14 +22,11 @@ function Nav(props) {
       </h2>
       <nav>
         <ul className="flex-row">
-          <li className="mx-2">
+          {/* <li className="mx-2">
             <a data-testid="about" href="#about">
               About me
             </a>
-          </li>
-          <li className="mx-2">
-            <span>Contact</span>
-          </li>
+          </li> */}
           {categories.map((category) => (
             <li
               className={`mx-1 ${

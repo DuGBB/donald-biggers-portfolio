@@ -6,6 +6,7 @@ import PortfolioGallery from "./components/PortfolioGallery";
 
 function App() {
   const [categories] = useState([
+    { name: "About Me", description: "Information about me" },
     {
       name: "Portfolio",
       description: "Information about this portfolio.",
@@ -23,7 +24,7 @@ function App() {
         currentCategory={currentCategory}
       ></Nav>
       <main>
-        <PortfolioGallery></PortfolioGallery>
+        <PortfolioGallery currentCategory={currentCategory}></PortfolioGallery>
         <About></About>
       </main>
     </div>
