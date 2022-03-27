@@ -19,7 +19,8 @@ function RepoList(currentCategory) {
       imgName: "Blazing-Saddles-Forum/Blazing-Saddles-Forum.png",
       importedImg: BSForum,
       GitHub: "https://github.com/DuGBB/Blazing-Sadddles-Forum",
-      deployed: "",
+      deployed:
+        "https://drive.google.com/file/d/1B8xiSU_4wZJ4sLQeZvOiJW49pQ-RrEK5/view",
     },
     {
       name: "Daily Planner",
@@ -39,7 +40,7 @@ function RepoList(currentCategory) {
       imgName: "E-commerce-Back-End/ecommerce.png",
       importedImg: ECommerce,
       GitHub: "https://github.com/DuGBB/Daily-Planner",
-      deployed: "",
+      deployed: "https://watch.screencastify.com/v/84143vu94yLLwAXSHZCX",
     },
     {
       name: "Trail Lad",
