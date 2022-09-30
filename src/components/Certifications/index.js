@@ -1,18 +1,14 @@
 import React, { useState } from "react";
-import resume from "../../assets/resume/resume.pdf";
-// had to import these from the react5 module to work correctly
+import web_dev_cert from "../../assets/certifications/cert.pdf";
+import certLetter from "../../assets/certifications/certLetter.pdf";
 import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack5";
-// had to copy pdf.worker.js into the public folder so it would be packaged
-// with the dist folder and usable.  Also, had to import this css specifically
-// to make sure the pdf links worked
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
-function Resume({ currentCategory }) {
+function Certifications({ currentCategory }) {
   const { name, description } = currentCategory;
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   console.log(name);
-  console.log(description);
 
   function changePage(offset) {
     setPageNumber((prevPageNumber) => prevPageNumber + offset);
@@ -26,7 +22,7 @@ function Resume({ currentCategory }) {
     changePage(1);
   }
 
-  if (name === "Resume") {
+  if (name === "Certifications") {
     function onDocumentLoadSuccess({ numPages }) {
       setNumPages(numPages);
       setPageNumber(1);
@@ -34,14 +30,14 @@ function Resume({ currentCategory }) {
     return (
       <div className="res">
         <Document
-          file={resume}
+          file={web_dev_cert}
           options={{ workerSrc: "pdf.worker.js" }}
           onLoadSuccess={onDocumentLoadSuccess}
         >
-          <Page pageNumber={pageNumber} height="1200" />
+          <Page pageNumber={pageNumber} height="800" />
         </Document>
 
-        <div>
+        {/* <div>
           <p>
             Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
           </p>
@@ -59,11 +55,39 @@ function Resume({ currentCategory }) {
           >
             Next
           </button>
-        </div>
+        </div> */}
+        <br></br>
+        <Document
+          file={certLetter}
+          options={{ workerSrc: "pdf.worker.js" }}
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} width="1035" />
+        </Document>
+
+        {/* <div>
+          <p>
+            Page {pageNumber || (numPages ? 1 : "--")} of {numPages || "--"}
+          </p>
+          <button
+            type="button"
+            disabled={pageNumber <= 1}
+            onClick={previousPage}
+          >
+            Previous
+          </button>
+          <button
+            type="button"
+            disabled={pageNumber >= numPages}
+            onClick={nextPage}
+          >
+            Next
+          </button>
+        </div> */}
       </div>
     );
   }
   return <section></section>;
 }
 
-export default Resume;
+export default Certifications;

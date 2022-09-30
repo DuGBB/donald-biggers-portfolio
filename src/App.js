@@ -6,6 +6,7 @@ import PortfolioGallery from "./components/PortfolioGallery";
 import ContactForm from "./components/ContactMe";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
+import Certifications from "./components/Certifications";
 
 function App() {
   const [categories] = useState([
@@ -14,8 +15,9 @@ function App() {
       name: "Portfolio",
       description: "Information about this portfolio.",
     },
-    { name: "Contact", description: "Ways to contact me." },
-    { name: "Resume", description: "Resume Coming Soon!" },
+    { name: "Ways to contact me", description: "Ways to contact me." },
+    { name: "Resume", description: "Work Resume" },
+    { name: "Certifications", description: "Course Certifications" },
   ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
@@ -30,7 +32,8 @@ function App() {
         <PortfolioGallery currentCategory={currentCategory}></PortfolioGallery>
         <About currentCategory={currentCategory}></About>
         <ContactForm currentCategory={currentCategory}></ContactForm>
-        <Resume></Resume>
+        <Resume currentCategory={currentCategory}></Resume>
+        <Certifications currentCategory={currentCategory}></Certifications>
         <Footer></Footer>
       </main>
     </div>
