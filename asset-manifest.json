@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/donald-biggers-portfolio/static/css/main.2cb51474.css",
+    "main.js": "/donald-biggers-portfolio/static/js/main.cf32434e.js",
+    "static/js/787.199c3688.chunk.js": "/donald-biggers-portfolio/static/js/787.199c3688.chunk.js",
+    "static/media/Nailer.png": "/donald-biggers-portfolio/static/media/Nailer.15bded99396340978d78.png",
+    "static/media/pdf.worker.js": "/donald-biggers-portfolio/static/media/pdf.worker.5a4781656f64092ca08b.js",
+    "static/media/Bootcamp-Real-Estate.png": "/donald-biggers-portfolio/static/media/Bootcamp-Real-Estate.a4d2e3e21f931189568b.png",
+    "static/media/ecommerce.png": "/donald-biggers-portfolio/static/media/ecommerce.9053e42c46cbb3598881.png",
+    "static/media/Lennons-Fitness-Super-App.png": "/donald-biggers-portfolio/static/media/Lennons-Fitness-Super-App.031634c110cbc01e2eda.png",
+    "static/media/Blazing-Saddles-Forum.png": "/donald-biggers-portfolio/static/media/Blazing-Saddles-Forum.dd375e8499d2f4bb2c78.png",
+    "static/media/cert.pdf": "/donald-biggers-portfolio/static/media/cert.2c47662a779f1cd69785.pdf",
+    "static/media/traillad.png": "/donald-biggers-portfolio/static/media/traillad.d8ee324fa4db1a1861d3.png",
+    "static/media/certLetter.pdf": "/donald-biggers-portfolio/static/media/certLetter.d2eeb7ed5668622350ee.pdf",
+    "static/media/DailyPlannerScreenshot.png": "/donald-biggers-portfolio/static/media/DailyPlannerScreenshot.459594bffc7510358263.png",
+    "static/media/resume.pdf": "/donald-biggers-portfolio/static/media/resume.eca8abda49f33d5d0095.pdf",
+    "index.html": "/donald-biggers-portfolio/index.html",
+    "main.2cb51474.css.map": "/donald-biggers-portfolio/static/css/main.2cb51474.css.map",
+    "main.cf32434e.js.map": "/donald-biggers-portfolio/static/js/main.cf32434e.js.map",
+    "787.199c3688.chunk.js.map": "/donald-biggers-portfolio/static/js/787.199c3688.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cb51474.css",
+    "static/js/main.cf32434e.js"
+  ]
+}
