@@ -15,9 +15,10 @@ function App() {
       name: "Portfolio",
       description: "Information about this portfolio.",
     },
-    { name: "Ways to contact me", description: "Ways to contact me." },
-    { name: "Resume", description: "Work Resume" },
+
     { name: "Certifications", description: "Course Certifications" },
+    { name: "Resume", description: "Work Resume" },
+    { name: "Contact Info", description: "Ways to contact me." },
   ]);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
@@ -31,9 +32,9 @@ function App() {
       <main>
         <PortfolioGallery currentCategory={currentCategory}></PortfolioGallery>
         <About currentCategory={currentCategory}></About>
-        <ContactForm currentCategory={currentCategory}></ContactForm>
-        <Resume currentCategory={currentCategory}></Resume>
         <Certifications currentCategory={currentCategory}></Certifications>
+        <Resume currentCategory={currentCategory}></Resume>
+        <ContactForm currentCategory={currentCategory}></ContactForm>
         <Footer></Footer>
       </main>
     </div>

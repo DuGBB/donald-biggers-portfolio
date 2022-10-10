@@ -3,7 +3,9 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props;
-  // console.log(props);
+  console.log("=============================");
+  console.log(props);
+  console.log("=============================");
   useEffect(() => {
     console.log(currentCategory);
     document.title = capitalizeFirstLetter(currentCategory.name);
@@ -15,7 +17,7 @@ function Nav(props) {
         <a data-testid="link" href="/">
           <span role="img" aria-label="trade">
             {" "}
-            🛠
+            👨‍🏭
           </span>{" "}
           Donald Biggers
         </a>

@@ -22,7 +22,7 @@ main {
   --secondary: #2225d9;
   --tertiary: #b12704;
   --light: #a39d9d;
-  --dark: #371717;
+  --dark: #0b0c0b;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
@@ -48,7 +48,7 @@ body {
   letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: "Roboto", open Sans;
+  font-family: "Arial", open Sans;
 }
 
 h1,

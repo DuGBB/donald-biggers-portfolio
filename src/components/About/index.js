@@ -11,7 +11,7 @@ function About({ currentCategory }) {
         <p>
           After graduating high school in early 2000, I attended college for
           almost two years while studying computer science. I worked 3 part time
-          jobs, and numerous side jobs. In mid 2002, I took the opportunity to
+          jobs, and numerous side jobs. In mid 2003, I took the opportunity to
           join Boilermakers Union Local #455 as a second generation apprentice.
           I topped out of the program in 2007 and continued my career for more
           than 18 years.
