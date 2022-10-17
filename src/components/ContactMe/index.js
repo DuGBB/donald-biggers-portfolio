@@ -10,7 +10,7 @@ function ContactForm({ currentCategory }) {
     message: "",
   });
 
-  const { name, email, message } = formState;
+  const { email, message } = formState;
 
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -38,24 +38,21 @@ function ContactForm({ currentCategory }) {
   }
 
   function handleSubmit(e) {
-    e.preventDefault();
     console.log(formState);
+    e.preventDefault();
+    let link = `mailto:donald.b.biggers@gmail.com?cc=${email}&subject=${encodeURIComponent(
+      "React Portfolio contact me"
+    )}&body=${encodeURIComponent(message)}`;
+    console.log(formState);
+    console.log(link);
+    window.location.href = link;
+    return false;
   }
-  console.log(currentCategory.name);
 
   if (currentCategory.name === "Contact Info") {
     return (
       <section>
         <form id="contact-form" onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name: </label>
-            <input
-              type="text"
-              defaultValue={name}
-              onBlur={handleChange}
-              name="name"
-            />
-          </div>
           <div>
             <label htmlFor="email">Email address: </label>
             <input
@@ -79,7 +76,11 @@ function ContactForm({ currentCategory }) {
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
-          <button data-testid="button" type="submit">
+          <button
+            data-testid="button"
+            type="submit"
+            // onClick="handleSubmit(); return false"
+          >
             Submit
           </button>
         </form>
