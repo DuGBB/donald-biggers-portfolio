@@ -43,12 +43,12 @@ function ContactForm({ currentCategory }) {
   }
   console.log(currentCategory.name);
 
-  if (currentCategory.name === "Ways to contact me") {
+  if (currentCategory.name === "Contact Info") {
     return (
       <section>
         <form id="contact-form" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">Name: </label>
             <input
               type="text"
               defaultValue={name}
@@ -57,7 +57,7 @@ function ContactForm({ currentCategory }) {
             />
           </div>
           <div>
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email">Email address: </label>
             <input
               type="email"
               defaultValue={email}
@@ -66,7 +66,7 @@ function ContactForm({ currentCategory }) {
             />
           </div>
           <div>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Message: </label>
             <textarea
               name="message"
               defaultValue={message}
