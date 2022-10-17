@@ -12,6 +12,16 @@ import FitnessApp from "../../assets/small/Group-Project-3/Lennons-Fitness-Super
 function RepoList(currentCategory) {
   let [photos] = useState([
     {
+      name: "Donald Biggers' React Portfolio",
+      technology: "React, JavaScript",
+      description:
+        "A React application showcasing technologies I have used, projects I have worked on, and my current resume.",
+      imgName: "Donald-Biggers-portfolio/DBportfolio",
+      importedImg: BSForum,
+      GitHub: "https://github.com/DuGBB/donald-biggers-portfolio",
+      deployed: "https://dugbb.github.io/donald-biggers-portfolio/",
+    },
+    {
       name: "Blazing Saddles Forum",
       technology: "MongoDB, JavaScript",
       description:

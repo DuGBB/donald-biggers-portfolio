@@ -11,6 +11,7 @@ Create a React Portfolio showcasing 6 projects, an about me, contact me, and a r
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Publishing](#publishing)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [GitHub Username](#github-username)
@@ -27,13 +28,18 @@ Clone the repo, and do the npm install in root directory.
 
 Run `npm start` from your command line.
 
+# Publishing
+
+`npm run build`
+`gh-pages -d build`
+
 # Contributing
 
 Submit any code changes in a pull request to be reviewed by the owner.
 
 # Tests
 
-Manul testing only at this time.
+Manual testing only at this time.
 
 # GitHub Username
 
@@ -45,7 +51,7 @@ To reach out to me with additional questions/comments, contact me at DuGsEmail@y
 
 # Screenshot
 
-![donald-biggers-portfolio](./assets/../src/assets/screenshot/donaldPort.png?raw=true "donald-biggers-portfolio")
+![donald-biggers-portfolio](./assets/../src/assets/screenshot/DBportfolio.png?raw=true "donald-biggers-portfolio")
 
 # To view the deployed app, click either the heroku deployed app here:
 
