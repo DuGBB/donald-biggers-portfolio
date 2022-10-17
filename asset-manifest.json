@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/donald-biggers-portfolio/static/css/main.2cb51474.css",
-    "main.js": "/donald-biggers-portfolio/static/js/main.eedc3a13.js",
+    "main.js": "/donald-biggers-portfolio/static/js/main.347ab668.js",
     "static/js/787.199c3688.chunk.js": "/donald-biggers-portfolio/static/js/787.199c3688.chunk.js",
     "static/media/DBportfolio.png": "/donald-biggers-portfolio/static/media/DBportfolio.3dc62e811b3ce17644a8.png",
     "static/media/Nailer.png": "/donald-biggers-portfolio/static/media/Nailer.15bded99396340978d78.png",
@@ -17,11 +17,11 @@
     "static/media/resume.pdf": "/donald-biggers-portfolio/static/media/resume.a36e59151794f7ff1a9d.pdf",
     "index.html": "/donald-biggers-portfolio/index.html",
     "main.2cb51474.css.map": "/donald-biggers-portfolio/static/css/main.2cb51474.css.map",
-    "main.eedc3a13.js.map": "/donald-biggers-portfolio/static/js/main.eedc3a13.js.map",
+    "main.347ab668.js.map": "/donald-biggers-portfolio/static/js/main.347ab668.js.map",
     "787.199c3688.chunk.js.map": "/donald-biggers-portfolio/static/js/787.199c3688.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2cb51474.css",
-    "static/js/main.eedc3a13.js"
+    "static/js/main.347ab668.js"
   ]
 }
