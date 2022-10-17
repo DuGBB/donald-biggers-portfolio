@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import Modal from "../Modal";
 
 // import photo from "../../assets/PortfolioGallery/PG.png";
+import ReactPortfolio from "../../assets/small/Donald-Bigger-portfolio/DBportfolio.png";
 import BSForum from "../../assets/small/Blazing-Saddles-Forum/Blazing-Saddles-Forum.png";
 import DailyPlanner from "../../assets/small/Daily-Planner/DailyPlannerScreenshot.png";
 import ECommerce from "../../assets/small/E-commerce-Back-End/ecommerce.png";
@@ -17,7 +18,7 @@ function RepoList(currentCategory) {
       description:
         "A React application showcasing technologies I have used, projects I have worked on, and my current resume.",
       imgName: "Donald-Biggers-portfolio/DBportfolio",
-      importedImg: BSForum,
+      importedImg: ReactPortfolio,
       GitHub: "https://github.com/DuGBB/donald-biggers-portfolio",
       deployed: "https://dugbb.github.io/donald-biggers-portfolio/",
     },
